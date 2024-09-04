@@ -1,0 +1,10 @@
+.DS_Store
+.history
+public
+dist
+dist-lib
+
+*.config.js
+
+.eslintrc.js
+typings.d.ts

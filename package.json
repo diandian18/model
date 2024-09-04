@@ -1,0 +1,60 @@
+{
+  "name": "@zhangsai/model",
+  "version": "0.0.1",
+  "description": "A data management tool, which aim is to separate UI and data",
+  "keywords": [
+    "model",
+    "data management",
+    "react data management"
+  ],
+  "files": [
+    "dist-lib"
+  ],
+  "type": "module",
+  "main": "./dist-lib/index.js",
+  "module": "./dist-lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist-lib/index.js",
+      "require": "./dist-lib/index.js"
+    }
+  },
+  "types": "./dist-lib/index.d.ts",
+  "scripts": {
+    "start": "vite --mode localhost",
+    "build:lib": "vite build --mode lib",
+    "prepare": "husky",
+    "lint:js": "eslint --cache --ext .js,.jsx,.ts,.tsx ./src",
+    "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx ./src",
+    "analysis": "vite-bundle-visualizer --mode lib"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "eslint --cache --ext .js,.jsx,.ts,.tsx --max-warnings 0"
+  },
+  "dependencies": {
+    "@zhangsai/events": "^0.0.2",
+    "immer": "^10.1.1",
+    "rxjs": "^7.8.1",
+    "store2": "^2.14.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^22.5.2",
+    "@types/react": "^18.3.5",
+    "@types/store": "^2.0.5",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "^2.30.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-plugin-dts": "^4.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}
