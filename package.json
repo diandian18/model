@@ -1,6 +1,6 @@
 {
   "name": "@zhangsai/model",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A data management tool, which aim is to separate UI and data",
   "keywords": [
     "model",

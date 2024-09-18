@@ -20,3 +20,7 @@ export {
   useModel,
   useModelState,
 } from './hooks';
+
+export {
+  default as Events,
+} from '@zhangsai/events';
